@@ -5,29 +5,59 @@
     <title>Register</title>
   </head>
   <body>
-    <form class="" action="index.html" method="post">
-      First Name: <input type="text"/><br>
-      Last Name: <input type="text"/><br>
+
+    <!-- div and span uses for css style  -->
+
+<div class="">
+
+</div>
+<span>First Name:</span> <input type="text" name="firstname" value="">
+
+
+    <!-- use get not post  -->
+    <form class="" method="get">
+      First Name: <input type="text" name="firstname"/><br>
+      Last Name: <input type="text" name="lastname"/><br>
       Email: <input type="email" required/><br>
-      Birthday: <input type="date" name="" value=""><br>
+      Password: <input type="password" min='5'><br>
+      Birthday: <input type="date" name="birthday" value=""><br>
+
+    <!-- only pick one option -->
       Gender: <br>
-      <input type="radio" name="gender" value="">Male<br />
-      <input type="radio" name="gender" value="">Female<br />
-      <input type="radio" name="gender" value="">Other<br />
+      <input type="radio" name="gender" value="Male">Male<br />
+      <input type="radio" name="gender" value="Female">Female<br />
+      <input type="radio" name="gender" value="Other">Other<br />
 
+<!-- check and uncheck box is optional -->
       Pets: <br>
-      <input type="checkbox" name="" value=""> Cat <br>
-      <input type="checkbox" name="" value=""> Dogs <br>
-      <input type="checkbox" name="" value=""> Birds <br>
-      <input type="checkbox" name="" value=""> Not Specified <br>
+      <input type="checkbox" name="cat" value="cat"> Cat <br>
+      <input type="checkbox" name="dog" value="dogs"> Dogs <br>
+      <input type="checkbox" name="birds" value="birds"> Birds <br>
+      <input type="checkbox" name="other" value="not"> Not Specified <br>
 
-
-
-
-
+      <!-- drop down menu  -->
+      Cars: <br>
+      <select class="" name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="Audi">Audi</option>
+        <option value="Honda">Honda</option>
+        <option value="Toyota">Toyota</option>
+        <option value="Bmw">BMW</option>
+        <option value="Mercedes">Mercedes</option>
+        <option value="Subaru">Subaru</option>
+        <option value="Other">Other</option>
+      </select>
 
       <input type="submit" name="" value="Register!">
       <input type="reset">
     </form>
   </body>
 </html>
+
+<!-- file:///Users/donaldrichtamayo/Desktop/udemy/full-stack-dev/register.html
+?firstname=Don+Aldrich&
+lastname=Tamayo&
+birthday=2018-05-08&
+gender=Male&
+cat=cat&
+other=not -->
